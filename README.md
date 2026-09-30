@@ -24,7 +24,6 @@ This project implements the **Steepest Descent Method (SDM)** — a 1D projectio
 6. [How to Run the Tests (MATLAB)](#6-how-to-run-the-tests-matlab)
 7. [Expected Results](#7-expected-results)
 8. [Report & Presentation](#8-report--presentation)
-9. [Component Status Check](#9-component-status-check)
 
 ---
 
@@ -452,20 +451,3 @@ The GMRES implementation will follow the same pattern:
 4. Compare with MATLAB's built-in `gmres`
 5. Write report and presentation
 
----
-
-## 9. Component Status Check
-
-| Component | File(s) | Status |
-|:----------|:--------|:------:|
-| SDM Theory | `SDM_Theory.md` (standalone), Section 2 of `SDM_Report.docx` | ✅ Done |
-| MATLAB Function | `SDM.m` | ✅ Done, correct |
-| Small System Tests | `test_SDM_small.m` | ✅ Done |
-| Large System Tests | `test_SDM_large.m` | ✅ Done |
-| Sparse Matrix Tests | `test_SDM_sparse.m` | ✅ Done — downloads Matrix Market or falls back to built-in Poisson sparse matrix |
-| Matrix Market reader | `mmread.m` | ✅ Included, called in `test_SDM_sparse.m` via `mmread('bcsstk01.mtx')` |
-| Report | `SDM_Report.docx` | ✅ Filled with tables, needs actual results from MATLAB runs |
-| Presentation | `SDM_Presentation.pdf` | ✅ Need to fill in [Your Name] |
-| Progress tracker | `README.md` (this file) | Documents every step |
-
-*Last updated: 25 June 2026*
